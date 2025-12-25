@@ -9,7 +9,7 @@ const Hero = () => {
 
     return (
         <section className="bg-black">
-            <div className="flex relative h-fit w-full overflow-hidden">
+            <div className="flex relative h-fit w-full overflow-hidden p-2">
                 <Navbar />
                 <div className="absolute inset-0 bg-linear-to-t from-black to-transparent z-10" />
                 <video
@@ -38,13 +38,13 @@ const Hero = () => {
                         </motion.div>
                     </motion.div>
                     <TextFade direction="down" staggerChildren={0.4}>
-                    <h1  className="text-4xl sm:text-5xl md:text-6xl text-center font-bold">Transform Compliance from <br /> complexity to confidence</h1>
-                    <p className="max-w-lg mx-auto text-center mt-5 text-gray-400 text-sm md:text-md">Intelligent. Integrated. Compliant. Suronex unifies your multi-cloud assets, detects what matters, and automates the work that slows you down.</p>
+                    <h1  className="text-2xl md:text-4xl lg:text-6xl text-center font-bold">Transform Compliance from <br /> complexity to confidence</h1>
+                    <p className="max-w-lg mx-auto text-center mt-5 text-gray-400 text-xs md:text-md">Intelligent. Integrated. Compliant. Suronex unifies your multi-cloud assets, detects what matters, and automates the work that slows you down.</p>
                     </TextFade>
                     <div className="flex gap-6 mt-5">
-                        <motion.button initial={{scale:0, opacity: 0}} animate={{scale:1, opacity:1}} transition={{duration:0.3, ease: "easeInOut"}} className="bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 px-7 py-2 rounded-lg font-semibold">Book Demo</motion.button>
+                        <motion.button initial={{scale:0, opacity: 0}} animate={{scale:1, opacity:1}} transition={{duration:0.3, ease: "easeInOut"}} className="bg-linear-to-r from-blue-600 via-purple-600 to-pink-600 px-7 py-2 rounded-lg font-semibold text-sm md:text-md">Book Demo</motion.button>
                         <motion.div initial={{scale:0, opacity: 0}} animate={{scale:1, opacity:1}} transition={{duration:0.6, ease: "easeInOut"}} className="inline-block p-px  m-0 rounded-lg  bg-linear-to-r from-blue-600 via-purple-600 to-pink-500">
-                            <button  className="rounded-lg bg-gray-900 px-7 py-2  text-white ">
+                            <button  className="rounded-lg bg-gray-900 px-7 py-2 text-sm md:text-md  text-white ">
                                 See Platform
                             </button>
                         </motion.div>
